@@ -1,4 +1,6 @@
-public class Animal1 {
+package com.elamathi.java;
+
+public class InterfaceVerification2 {
     public static void main(String[] args) {
         System.out.println("Hello World");
 

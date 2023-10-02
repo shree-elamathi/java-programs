@@ -1,3 +1,5 @@
+package com.elamathi.java;
+
 interface Vehicle {
     int noOfWheels();
     double engineCapacity();
