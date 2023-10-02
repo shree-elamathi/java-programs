@@ -27,7 +27,12 @@ abstract class Animal {
 
 public class InheritanceVerification {
     public static void main(String[] args) {
-        Dog dog = new Dog();
+        Dog dog = new Dog() {
+            @Override
+            void bark() {
+                System.out.println("meow meow");
+            }
+        };
         dog.run();
         dog.bark();
         Puppy puppy = new Puppy();
