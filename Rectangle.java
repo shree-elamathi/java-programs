@@ -1,27 +1,38 @@
-//Given the length and breadth of a rectangle, write a program to check whether the perimeter or the area of the rectangle is greater.
 import java.util.Scanner;
 class Rectangle{
-public static void main(String [] args){
+public static void main (String[]args){
 Scanner s = new Scanner(System.in);
-System.out.println("Enter length: ");
-double length = s.nextDouble();
-System.out.println("Enter breadth: ");
-double breadth = s.nextDouble();
-//System.out.println((l*b)>(2*(l+b)?"area":"perimeter");
-double area = Area(length,breadth);
-double perimeter = Perimeter(length,breadth);
-if (area>perimeter){
-System.out.println("Area is Greater");
+System.out.println("***Enter the lenght ***");
+System.out.print("--> ");
+double a = s.nextDouble();
+System.out.println("***Enter the breadth ***");
+System.out.print("--> ");
+double b = s.nextDouble();
+
+
+if ((a!=0) && (b!=0)){
+
+
+double area = a*b;
+double perimeter = 2*(a+b);
+System.out.println(" THE AREA OF THE RECATANGEL IS = "+ area);
+System.out.println(" THE PERIMETER OF THE RECATANGEL IS = "+ perimeter);
+
+if(area>perimeter){
+System.out.println(" ***THE AREA OF THE RECATANGEL IS GREATER***");
 }
+
 else{
-System.out.println("Perimeter is Greater");
+System.out.println("***THE PERIMETER IS GREATER***");
 }
 }
-public static double Area(double l, double b){
-return l*b;
+
+
+
+else{
+System.out.println("***THE INPUT SHOULD NOT BE ZERO***");
 }
-public static double Perimeter(double l, double b){
-return (2*(l+b));
+
 
 }
 }
